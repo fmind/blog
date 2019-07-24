@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>In [*]: F(mind)</title><link>https://www.fmind.me/</link><description></description><lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0200</lastBuildDate><item><title>3P Principle: Purpose, Productivity, Performance</title><link>https://www.fmind.me/3p-principle.html</link><description>&lt;img alt="diagram of the 3P principle" src="https://www.fmind.me/images/3p-principle.png" /&gt;
+<rss version="2.0"><channel><title>In [*]: F(mind)</title><link>https://fmind.me/</link><description></description><lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0200</lastBuildDate><item><title>3P Principle: Purpose, Productivity, Performance</title><link>https://fmind.me/3p-principle.html</link><description>&lt;img alt="diagram of the 3P principle" src="https://fmind.me/images/3p-principle.png" /&gt;
 &lt;p&gt;As programmers, we want programming languages which are efficient, effective and general purpose.
 &lt;strong&gt;Is there any language that satisfies these 3 properties ? And can we ever create such language ?&lt;/strong&gt;
 In this article, I define the 3P Principle and explain its importance in software projects.&lt;/p&gt;
@@ -70,4 +70,4 @@ In this article, I define the 3P Principle and explain its importance in softwar
 &lt;li&gt;&lt;strong&gt;Remember that the requirements of a project will change over time&lt;/strong&gt;. The ability to adapt to new requirements remains important through the course of a project.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Médéric Hurier (fmind)</dc:creator><pubDate>Sun, 28 Jul 2019 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:www.fmind.me,2019-07-28:/3p-principle.html</guid><category>principle</category><category>programming</category><category>language</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Médéric Hurier (fmind)</dc:creator><pubDate>Sun, 28 Jul 2019 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:fmind.me,2019-07-28:/3p-principle.html</guid><category>principle</category><category>programming</category><category>language</category></item></channel></rss>
