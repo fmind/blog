@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="{{DEFAULT_LANG}}" dir="ltr" itemscope itemtype="https://schema.org/WebPage">
+<head>
+    <meta charset="utf-8" />
+    {% block head %}
+    <title>{{SITENAME}}</title>
+    <meta name="image" content="{{SITEURL}}/{{IMAGE}}" />
+    <meta name="author" content="{{AUTHOR}}" />
+    <meta name="keywords" content="{{DESC}}" />
+    <meta name="description" content="{{DESC}}" />
+    <meta itemprop="name" content="{{SITENAME}}" />
+    <meta itemprop="image" content="{{SITEURL}}/{{IMAGE}}" />
+    <meta itemprop="description" content="{{DESC}}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{TWITTER}}" />
+    <meta name="twitter:title" content="{{SITENAME}}" />
+    <meta name="twitter:image:src" content="{{SITEURL}}/{{IMAGE}}" />
+    <meta name="twitter:description" content="{{DESC}}" />
+    <meta name="og:type" content="website" />
+    <meta name="og:url" content="{{SITEURL}}" />
+    <meta name="og:title" content="{{SITENAME}}" />
+    <meta name="og:image" content="{{SITEURL}}/{{IMAGE}}" />
+    <meta name="og:locale" content="{{DEFAULT_LANG}}" />
+    <meta name="og:site_name" content="{{SITENAME}}" />
+    <meta name="og:description" content="{{DESC}}" />
+    {% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{SITEURL}}/styles/{{CSS_FILE}}" />
+    <link rel="icon" type="image/png" href="{{SITEURL}}/images/favicon.png" />
+    <link rel="alternate" type="application/rss+xml" title="Latest articles (RSS)"
+    href="{{SITE_URL}}/{{FEED_ALL_RSS}}" />
+    <link rel="alternate" type="application/atom+xml" title="Latest articles (ATOM)"
+    href="{{SITE_URL}}/{{FEED_ALL_ATOM}}" />
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="{{SITEURL}}">{{SITENAME}}</a>
+        </h1>
+        <h2># Blog of Médéric Hurier</h2>
+    </header>
+    <nav class="pure-g">
+        <a href="https://www.linkedin.com/in/{{LINKEDIN}}/" title="Go to my LinkedIn profile" class="pure-u-1-4">LinkedIn</a>
+        <a href="https://twitter.com/{{TWITTER}}" title="Go to my Twitter profile" class="pure-u-1-4">Twitter</a>
+        <a href="https://github.com/{{GITHUB}}" title="Go to my GitHub profile" class="pure-u-1-4">GitHub</a>
+        <a href="{{SITEURL}}/{{FEED_ALL_RSS}}" title="Subscribe to my blog" class="pure-u-1-4">RSS</a>
+    </nav>
+    <section>
+        {% block body %}
+        {% endblock %}
+    </section>
+</body>
+</html>
