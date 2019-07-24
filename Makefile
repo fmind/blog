@@ -12,4 +12,4 @@ build: venv
 	venv/bin/pelican --verbose --ignore-cache --delete-output-directory --output output content
 
 deploy: build
-	git add output && git commit -m "RELEASE" && git subtree push --prefix output origin master
+	git add output; git commit -m "$(shell date +%s)"; git subtree push --prefix output origin master
