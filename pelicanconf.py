@@ -1,5 +1,5 @@
 SITENAME = 'In [*]: F(mind)'
-SITEURL = 'https://www.fmind.me'
+SITEURL = 'https://fmind.me'
 AUTHOR = 'Médéric Hurier (fmind)'
 IMAGE = 'images/avatar.png'
 DESC = 'Doctor, Hacker, Learner, Teacher, Researcher, Entrepreneur, Father, and Dog Owner.'
