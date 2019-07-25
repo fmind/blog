@@ -21,8 +21,10 @@ Definitions
 
 - **(General) Purpose**: a programming language that can be applied to a wide range of problems.
    -  e.g. web programming, computer security, theorem proving, data analysis …
+
 - **Productivity**: a programming language that lets programmers deliver effective program under time constraints.
    -  e.g. dynamic typing, introspection, meta-programming, REPL development …
+
 - **Performance**: a programming language which is fast and efficient to execute on a computer.
    -  e.g. static typing, compilation, manual memory management, unboxed types …
 

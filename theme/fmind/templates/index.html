@@ -3,7 +3,7 @@
 {% block body %}
     <h1>Latest articles</h1>
     {% for article in articles %}
-    <ul id="index">
+    <ul id="toc">
         <li>
             <a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a> - <small>{{article.locale_date}}</small>
         </li>
