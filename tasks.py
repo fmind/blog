@@ -12,14 +12,26 @@ def venv(c, force=False):
 
 
 @task(venv)
+def work(c):
+    """Run an instance of Jupyterlab."""
+    c.run('venv/bin/jupyter lab')
+
+
+@task
+def plugs(c):
+    """Download some external plugins."""
+    c.run('git submodule add git://github.com/danielfrg/pelican-ipynb.git plugins/ipynb')
+
+
+@task(venv)
 def style(c):
     """Create the code style for the site."""
-    c.run('pygmentize -f html -a .highlight -S colorful > theme/fmind/static/styles/pygment.css')
+    c.run('venv/bin/pygmentize -f html -a .highlight -S colorful > theme/fmind/static/styles/pygment.css')
 
 
 @task(venv)
 def serve(c):
-    """Serve and auto-regenerate the website."""
+    """Serve and auto-regenerate the site."""
     c.run('venv/bin/pelican --verbose --listen --autoreload --relative-urls --output local content')
 
 

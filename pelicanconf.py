@@ -1,6 +1,7 @@
 SITENAME = 'In [*]: F(mind)'
 SITEURL = 'https://fmind.me'
 AUTHOR = 'Médéric Hurier (fmind)'
+
 IMAGE = 'images/avatar.png'
 DESC = 'Doctor, Hacker, Learner, Teacher, Researcher, Entrepreneur, Father, and Dog Owner.'
 
@@ -8,17 +9,34 @@ GITHUB = 'fmind'
 TWITTER = 'fmindme'
 LINKEDIN = 'fmindme'
 
-CACHE_CONTENT = True
-
 THEME = 'theme/fmind'
 THEME_STATIC_DIR = '.'
 
 TIMEZONE = 'Europe/Paris'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 
+MARKUP = [
+    'ipynb',
+]
+CACHE_CONTENT = True
+IPYNB_FIX_CSS = True
+IPYNB_SKIP_CSS = True
+IPYNB_USE_METACELL = True
+
+PLUGINS = [
+    'ipynb.markup',
+]
+PLUGIN_PATHS = [
+    './plugins',
+]
+
 STATIC_PATHS = [
     'files',
     'images',
+]
+
+IGNORE_FILES = [
+    '.ipynb_checkpoints'
 ]
 
 DEFAULT_METADATA = {

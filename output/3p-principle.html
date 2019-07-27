@@ -51,77 +51,115 @@
     <section>
     <h1>3P Principle: Purpose, Productivity, Performance</h1>
     <article>
-        <img alt="diagram of the 3P principle" src="https://fmind.me/images/3p-principle.png" />
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="https://fmind.me/images/3p-principle.png" alt="Diagram of the 3P principle"></p>
 <p>As programmers, we want programming languages which are efficient, effective and general purpose.
-<strong>Is there any language that satisfies these 3 properties ? And can we ever create such language ?</strong>
-In this article, I define the 3P Principle and explain its importance in software projects.</p>
-<div class="section" id="definitions">
-<h2>Definitions</h2>
-<p><strong>The 3P Principle states that a programming language cannot satisfies these properties at the same time:</strong></p>
-<ul class="simple">
-<li><dl class="first docutils">
-<dt><strong>(General) Purpose</strong>: a programming language that can be applied to a wide range of problems.</dt>
-<dd><ul class="first last">
+Is there any language that satisfies these 3 properties? And can we ever create such language? In this article, I define the 3P Principle and explain its importance in software projects.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Definitions">Definitions<a class="anchor-link" href="#Definitions">&#182;</a></h2><p><strong>The 3P Principle states that a programming language cannot satisfies these properties at the same time:</strong></p>
+<ul>
+<li><p><strong>(General) Purpose</strong>: a programming language that can be applied to a wide range of problems.</p>
+<ul>
 <li>e.g. web programming, computer security, theorem proving, data analysis …</li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="first docutils">
-<dt><strong>Productivity</strong>: a programming language that lets programmers deliver effective program under time constraints.</dt>
-<dd><ul class="first last">
+<li><p><strong>Productivity</strong>: a programming language that lets programmers deliver effective program under time constraints.</p>
+<ul>
 <li>e.g. dynamic typing, introspection, meta-programming, REPL development …</li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><dl class="first docutils">
-<dt><strong>Performance</strong>: a programming language which is fast and efficient to execute on a computer.</dt>
-<dd><ul class="first last">
+<li><p><strong>Performance</strong>: a programming language which is fast and efficient to execute on a computer.</p>
+<ul>
 <li>e.g. static typing, compilation, manual memory management, unboxed types …</li>
 </ul>
-</dd>
-</dl>
 </li>
 </ul>
+
 </div>
-<div class="section" id="trade-offs">
-<h2>Trade-offs</h2>
-<dl class="docutils">
-<dt>Let’s focus on the Performance Vs. Productivity trade-off:</dt>
-<dd><p class="first">For a language to be <strong>Performant</strong>, it must provide a set of features close to the logic of a computer.</p>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Trade-offs">Trade-offs<a class="anchor-link" href="#Trade-offs">&#182;</a></h2><p>Let’s focus on the Performance Vs. Productivity trade-off:</p>
+<blockquote><p>For a language to be <strong>Performant</strong>, it must provide a set of features close to the logic of a computer.</p>
 <p>For a language to be <strong>Productive</strong>, it must provide a set of features close to the logic of a programmer.</p>
-<p class="last">Since the logic of a computer is different from the logic of a programmer, the task of optimizing the Performance and Productivity of a programming language at the same time is not possible.</p>
-</dd>
-</dl>
+<p>Since the logic of a computer is different from the logic of a programmer, the task of optimizing the Performance and Productivity of a programming language at the same time is not possible.</p>
+</blockquote>
 <p>Historically, some languages like C or Assembly have always been closer to the hardware than other languages like LISPs or Python. On the other hand, LISPs and Python provide many convenient features to their programmers such as dynamic typing and meta-programming.</p>
 <p>As simple as it is, this trade-off is not all or nothing. Modern languages like Rust, Haskell or Clojure attempt to balance these two properties.</p>
 <p><strong>The question is: can we succeed in creating a language that satisfies these 3 properties ?</strong></p>
-<blockquote>
-<p>To optimize both the Performance and the Productivity of a programming language, the Purpose of a language must the limited to a specific set of tasks.</p>
+<blockquote><p>To optimize both the Performance and the Productivity of a programming language, the Purpose of a language must the limited to a specific set of tasks.</p>
 <p>By limiting the domain of a programming language, its range of application becomes more essential both for the programmer to use and for the computer to execute.</p>
 </blockquote>
 <p>If we need to consider every possible use cases, I think the problem will remain too hard for humans to solve. We can’t think about every situation in which a programming language can be used.</p>
 <p>What can we do instead is to limit our focus, and try to find a good solution on a smaller problem.</p>
 <p>Again, the most important requirement we can trade is the general applicability of a programming language. SQL for instance has one and only goal: managing database information with relational algebra. Other Domain Specific Languages (DSL) are created to deal with narrow tasks such as web template, matrix manipulation or logic programming.</p>
 <p><strong>By reducing the scope of a language, the core developers have the opportunity to improve both the performance and the productivity of their language.</strong></p>
+
 </div>
-<div class="section" id="importance">
-<h2>Importance</h2>
-<p>If ignored, the 3P principle can harm the success chance of a software project.</p>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Importance">Importance<a class="anchor-link" href="#Importance">&#182;</a></h2><p>If ignored, the 3P principle can harm the success chance of a software project.</p>
 <p>When I was working as a web developer, my mission was to deliver application features as fast as I can. But as the user base grown, my tasks shifted toward improving the performance of the application.</p>
-<p><a class="reference external" href="https://code.fb.com/web/hiphop-for-php-move-fast/">Facebook</a> and <a class="reference external" href="https://www.infoq.com/articles/twitter-java-use">Twitter</a> have attempted to improve the scalability of their website several time, without sacrificing their ability to develop new features. Unfortunately, most programming languages don’t help their programmers in that regard.</p>
+<p><a href="https://code.fb.com/web/hiphop-for-php-move-fast">Facebook</a> and <a href="https://www.infoq.com/articles/twitter-java-use">Twitter</a> have attempted to improve the scalability of their website several time, without sacrificing their ability to develop new features. Unfortunately, most programming languages don’t help their programmers in that regard.</p>
 <p><strong>The optimal solution is often to rewrite the application with a different (and often incompatible) language.</strong></p>
 <p>Recently, I’ve been working on a data analysis project to process large datasets. Compared to web programming, a data analysis must be both fast to develop and fast to execute to gather experimental results as soon as possible. Again, few programming languages can address this use case.</p>
 <p>Either the programming language is too slow to execute (e.g. Python, R) or too slow to develop (Java, C++). Other languages like Julia try to balance this trade-off, but they are not as general purpose as the languages I listed.</p>
 <p>I don’t have a definitive answer to solve this problem, but there is few things that I can suggest:</p>
-<ul class="simple">
+<ul>
 <li><strong>Create and explore specific purpose programming languages</strong> (e.g. query languages, data pipelines ...).</li>
-<li><strong>Embrace the idea of</strong> <a class="reference external" href="https://deanwampler.github.io/polyglotprogramming/">Polyglot Programming</a> to combine the strength of multiple languages (e.g. TensorFlow relies on C++ for its backend (performance) and Python for its frontend (productivity)).</li>
-<li><strong>Remember that</strong> <a class="reference external" href="http://wiki.c2.com/?PrematureOptimization">premature optimization is the root of all evil</a>. It is often more important to explore the edge cases of a problem before committing to optimize specific use case.</li>
+<li><strong>Embrace the idea of</strong> <a href="https://deanwampler.github.io/polyglotprogramming">Polyglot Programming</a> to combine the strength of multiple languages (e.g. TensorFlow relies on C++ for its backend (performance) and Python for its frontend (productivity)).</li>
+<li><strong>Remember that</strong> <a href="http://wiki.c2.com/?PrematureOptimization">premature optimization is the root of all evil</a>. It is often more important to explore the edge cases of a problem before committing to optimize specific use case.</li>
 <li><strong>Remember that the requirements of a project will change over time</strong>. The ability to adapt to new requirements remains important through the course of a project.</li>
 </ul>
+
 </div>
+</div>
+</div>
+ 
+
+
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['$','$'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        " linebreaks: { automatic: true, width: '95% container' }, " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
 
     </article>
     </section>
