@@ -2,11 +2,13 @@
 
 {% block body %}
     <h1>Latest articles</h1>
-    {% for article in articles %}
-    <ul id="toc">
-        <li>
-            <a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a> - <small>{{article.locale_date}}</small>
-        </li>
-    </ul>
-    {% endfor %}
+    <article>
+        {% for article in articles %}
+        <ul>
+            <li>
+                <a href="{{SITEURL}}/{{article.url}}">{{article.title}}</a> - <small>{{article.locale_date}}</small>
+            </li>
+        </ul>
+        {% endfor %}
+    </article>
 {% endblock body %}
