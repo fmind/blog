@@ -43,7 +43,7 @@ DEFAULT_METADATA = {
     'image': IMAGE,
     'author': AUTHOR,
     'status': 'published',
-    'category': 'objectivism',
+    'category': 'computer-science',
 }
 
 EXTRA_PATH_METADATA = {
