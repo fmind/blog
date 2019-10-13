@@ -1,1 +1,1 @@
-# www.fmind.me
+# blog
